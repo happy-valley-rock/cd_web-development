@@ -23,15 +23,16 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 /* Navbar styles*/
 
 .navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
+  margin: auto;
   box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.1);
 }
 
+.navbar li {
+  display: inline;
+  text-decoration: none;
+}
+
 .navbar a {
-  display: block;
   padding: 8px 42px;
   font-size: 20px;
   font-weight: 500;
@@ -44,11 +45,11 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 }
 
 .navbar__buttons {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  text-align: right;
+  margin: 0;
+  padding: 16px;
+  background-color: #0D0D0D;
+  display: block;
+  height: 100%;
   text-decoration: none;
 }
 
@@ -70,9 +71,8 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 
 .page {
   background-color: #0D0D0D;
-  display: flex;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .page__content {
@@ -86,3 +86,42 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 .page__content__text {
   font-size: 16px;
 }
+
+/* Home page */
+
+.home__title {
+  position: absolute;
+  bottom: 0px;
+  font-size: 96px;
+  padding-left: 42px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.home__background {
+  width: 100%;
+  height: 100%;
+}
+
+/* Gallery page */
+
+.gallery {
+
+}
+
+.gallery__image {
+  width: 20%;
+}
+
+/* Discography page */
+
+.albums {
+  color: white;
+}
+
+/* Band page */
+
+.members ul li {
+  color: white;
+}
+
+/* History page */
