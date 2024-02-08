@@ -18,16 +18,6 @@
   src: local("MadeOuterSansOutlined"), url(../assets/fonts/MADE-OuterSans-Outline_Bold.otf) format("opentype");
 }
 
-/* Animations */
-
-@keyframes image-zoom-anim {
-  0% {
-    transform: translateX(-50%) scale(1); }
-  50% {
-    transform: translateX(-50%) scale(1.2); }
-  100% {
-    transform: translateX(-50%) scale(1); } }
-
 /* Common styles */
 
 * {
@@ -499,7 +489,6 @@ h1, h2, h3, h4, h5, h6, a, p, span {
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    animation: image-zoom-anim 30s linear 0s infinite;
 }
 .landing__bottom-image--hide {
     visibility: hidden;
