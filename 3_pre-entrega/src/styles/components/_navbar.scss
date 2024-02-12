@@ -95,14 +95,5 @@
     @include media("<=desktop") {
       height: 250px;
     }
-
-    &--hidden {
-      opacity   : 0;
-      transition: 1s;
-    }
-
-    &--show {
-      opacity: 1;
-    }
   }
 }

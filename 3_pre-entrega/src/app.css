@@ -289,11 +289,6 @@ h1, h2, h3, h4, h5, h6, a, p, span {
     @media (max-width: 1366px) {
       .navbar__vector {
         height: 250px; } }
-    .navbar__vector--hidden {
-      opacity: 0;
-      transition: 1s; }
-    .navbar__vector--show {
-      opacity: 1; }
 
 /* Footer styles */
 .footer {
