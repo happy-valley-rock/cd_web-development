@@ -10,15 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EzequielEDL/cd_desarrollo-web.git"
+    "url": "git+https://github.com/happy-valley-rock/cd_web_development.git"
   },
   "keywords": [],
-  "author": "Esequiel Delgado",
+  "author": "@happy-valley-rock",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EzequielEDL/cd_desarrollo-web/issues"
-  },
-  "homepage": "https://github.com/EzequielEDL/cd_desarrollo-web#readme",
   "devDependencies": {
     "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"

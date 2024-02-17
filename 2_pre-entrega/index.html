@@ -17,9 +17,8 @@
     <title>Luca Not Dead</title>
   </head>
 
-  <body>
-    <main class="layout">
-
+  <body class="layout">
+    <header class="header">
       <input class="menu-button" type="checkbox" name="menu" id="checked">
       <div class="topbar">
         <div class="topbar__menu">
@@ -50,7 +49,6 @@
           />
         </div>
       </div>
-
       <nav class="navbar">
         <ul class="navbar__buttons">
           <li><a class="navbar__buttons-link navbar__buttons-link--active" href="./index.html">landing</a></li>
@@ -58,6 +56,7 @@
           <li><a class="navbar__buttons-link" href="./pages/band.html">band</a></li>
           <li><a class="navbar__buttons-link" href="./pages/discography.html">discography</a></li>
           <li><a class="navbar__buttons-link" href="./pages/gallery.html">gallery</a></li>
+          <li><a class="navbar__buttons-link" href="#contact">contact</a></li>
         </ul>
         <div class="navbar__bottom">
           <a target="_blank" href="https://open.spotify.com/user/9t7qhi5hqhx0882iwbccqlbvy?si=bf397a672bc9476a">
@@ -83,49 +82,61 @@
           alt="old clock"
         />
       </nav>
+    </header>
 
-      <div class="content">
-        <div class="content__layout">
-          <section class="landing">
-            <div class="landing__top">
-              <span class="landing__top-header-label">.luca-not-dead</span>
-            </div>
+    <main class="content">
 
-            <div class="landing__middle">
-              <h1 class="landing__middle-title">LUCA - PRODAN</h1>
-              <h2 class="landing__middle-subtitle">
-                WEBSITE DEDICATED TO THE ROCK
-                LEADER FROM SUMO IN THE 80S ARGENTINA MUSIC
-              </h2>
-              <img
-                class="landing__middle-logo"
-                src="./assets/vectors/logo-sumo.svg"
-                alt="sumo logo"
-              />
-            </div>
-
-            <div class="landing__bottom">
-              <img
-                src="./assets/pictures/landing-band-playing.jpg"
-                class="landing__bottom-image landing-band-playing"
-                alt="landing band playing"
-              />
-            </div>
-
-            <img
-              src="./assets/pictures/background-grunge-footer.jpg"
-              class="background-image-section background-grunge-landing"
-              alt="background grunge landing"
-            />
-            <div class="stripes"></div>
-          </section>
+      <section class="landing">
+        <div class="landing__top">
+          <span class="landing__top-header-label">.luca-not-dead</span>
         </div>
-      </div>
 
+        <div class="landing__middle">
+          <h1 class="landing__middle-title">LUCA - PRODAN</h1>
+          <h2 class="landing__middle-subtitle">
+            WEBSITE DEDICATED TO THE ROCK
+            LEADER FROM SUMO IN THE 80S ARGENTINA MUSIC
+          </h2>
+          <img
+            class="landing__middle-logo"
+            src="./assets/vectors/logo-sumo.svg"
+            alt="sumo logo"
+          />
+        </div>
+
+        <div class="landing__bottom">
+          <img
+            src="./assets/pictures/landing-band-playing.jpg"
+            class="landing__bottom-image landing-band-playing"
+            alt="landing band playing"
+          />
+        </div>
+
+        <img
+          src="./assets/pictures/background-grunge-footer.jpg"
+          class="background-image-section background-grunge-landing"
+          alt="background grunge landing"
+        />
+        <div class="stripes"></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h4 class="contact__title">Contact Form</h4>
+        <form class="contact__form" action="index.html" method="post">
+          <input placeholder="Name" aria-label="name" type="text" name="name"/>
+          <input placeholder="Email address" aria-label="email address" type="email" name="Email address"/>
+          <input placeholder="Subject" aria-label="subject" type="text" name="Subject"/>
+          <textarea placeholder="Message" aria-label="message" name="Message" rows="8" cols="80"></textarea>
+
+          <input aria-label="submit contact form" type="submit" name="Subject" value="SUBMIT"/>
+        </form>
+
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="">
+
+      <div>
         <a target="_blank" href="https://open.spotify.com/user/9t7qhi5hqhx0882iwbccqlbvy?si=bf397a672bc9476a">
           <img src="./assets/icons/spotify-icon.svg" alt="spotify link"/>
         </a>
@@ -136,9 +147,7 @@
           <img src="./assets/icons/instagram-icon.svg" alt="linkedin link"/>
         </a>
       </div>
-      <span>Esequiel Delgado @2023</span>
+      <span>Esequiel Delgado @2024</span>
     </footer>
-
-
   </body>
 </html>

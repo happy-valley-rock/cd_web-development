@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="../public/favicon.ico" />
-    <link rel="luca-not-dead-icon" href="../public/logo192.png" />
-    <link rel="manifest" href="../public/manifest.json" />
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="luca-not-dead-icon" href="public/logo192.png" />
+    <link rel="manifest" href="public/manifest.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="thmarke-color" content="#121212" />
 
@@ -17,9 +17,8 @@
     <title>Luca Not Dead</title>
   </head>
 
-  <body>
-    <main class="layout">
-
+  <body class="layout">
+    <header class="header">
       <input class="menu-button" type="checkbox" name="menu" id="checked">
       <div class="topbar">
         <div class="topbar__menu">
@@ -39,25 +38,25 @@
 
         <div class="topbar__vector">
           <img
-            class="navbar__vector--hidden"
+            class="navbar__vector--show"
             src="../assets/vectors/skull-candel.svg"
             alt="skull candel"
           />
           <img
-            class="navbar__vector--show"
+            class="navbar__vector--hidden"
             src="../assets/vectors/old-clock.svg"
             alt="old clock"
           />
         </div>
       </div>
-
       <nav class="navbar">
         <ul class="navbar__buttons">
           <li><a class="navbar__buttons-link" href="../index.html">landing</a></li>
-          <li><a class="navbar__buttons-link navbar__buttons-link--active" href="./history.html">history</a></li>
-          <li><a class="navbar__buttons-link" href="./band.html">band</a></li>
-          <li><a class="navbar__buttons-link" href="./discography.html">discography</a></li>
-          <li><a class="navbar__buttons-link" href="./gallery.html">gallery</a></li>
+          <li><a class="navbar__buttons-link navbar__buttons-link--active" href="../pages/history.html">history</a></li>
+          <li><a class="navbar__buttons-link" href="../pages/band.html">band</a></li>
+          <li><a class="navbar__buttons-link" href="../pages/discography.html">discography</a></li>
+          <li><a class="navbar__buttons-link" href="../pages/gallery.html">gallery</a></li>
+          <li><a class="navbar__buttons-link" href="#contact">contact</a></li>
         </ul>
         <div class="navbar__bottom">
           <a target="_blank" href="https://open.spotify.com/user/9t7qhi5hqhx0882iwbccqlbvy?si=bf397a672bc9476a">
@@ -72,77 +71,87 @@
         </div>
 
         <img
-          class="navbar__vector navbar__vector--hidden"
+          class="navbar__vector navbar__vector--show"
           src="../assets/vectors/skull-candel.svg"
           alt="skull candel"
         />
 
         <img
-          class="navbar__vector navbar__vector--show"
+          class="navbar__vector navbar__vector--hidden"
           src="../assets/vectors/old-clock.svg"
           alt="old clock"
         />
       </nav>
+    </header>
 
-      <div class="content">
-        <div class="content__layout">
+    <main class="content">
 
-          <section id="history" class="history section">
-            <div class="history__top">
-              <img
-                src="../assets/pictures/history-singing-guitar.jpg"
-                class="history__top-image history-singing-guitar"
-                alt="history singing guitar"
-              />
-            </div>
-
-            <div class="history__bottom">
-              <h3 class="card">history</h3>
-              <div class="card">
-                <p><mark>Luca Prodan</mark> 1970s Argentina 1987 Argentine music
-                 was a musician and poet born in Italy, but primarily known for
-                 his work in the Argentine music scene. He was born in Rome in
-                 1953 and moved to England at the age of 11, where he attended
-                 high school and later Cambridge University, where he studied
-                 English literature.
-               </p>
-                <p>In the <mark>1970s</mark>, he moved to <mark>Argentina</mark>
-                  and became the leader of the rock band Sumo, one of
-                  the most influential bands of the Argentine music scene of the
-                  time. Sumo fused several musical genres, such as rock, reggae,
-                  and punk, and Prodan was a talented and charismatic lyricist
-                  who helped define the band's sound.
-                </p>
-                <p>However, Prodan also struggled with addiction and mental
-                  health issues, and passed away in <mark>1987</mark> at the age
-                  of 34 due to respiratory failure. Despite his short career,
-                  Prodan left a lasting mark on <mark>Argentina music</mark>
-                  and is remembered as one of the most influential artists
-                  of his generation.
-                </p>
-              </div>
-            </div>
-
-            <img
-              class="history__decorate-vector"
-              src="../assets/vectors/light-sparkles.svg"
-              alt="light sparkles"
-            />
-            <img
-              src="../assets/pictures/background-grunge-sections.jpg"
-              class="background-image-section background-grunge-sections"
-              alt="background grunge history section"
-            />
-            <div class="stripes"></div>
-          </section>
-
+      <section id="history" class="history section">
+        <div class="history__top">
+          <img
+            src="../assets/pictures/history-singing-guitar.jpg"
+            class="history__top-image history-singing-guitar"
+            alt="history singing guitar"
+          />
         </div>
-      </div>
 
+        <div class="history__bottom">
+          <h3 class="card">history</h3>
+          <div class="card">
+            <p><mark>Luca Prodan</mark> 1970s Argentina 1987 Argentine music
+             was a musician and poet born in Italy, but primarily known for
+             his work in the Argentine music scene. He was born in Rome in
+             1953 and moved to England at the age of 11, where he attended
+             high school and later Cambridge University, where he studied
+             English literature.
+           </p>
+            <p>In the <mark>1970s</mark>, he moved to <mark>Argentina</mark>
+              and became the leader of the rock band Sumo, one of
+              the most influential bands of the Argentine music scene of the
+              time. Sumo fused several musical genres, such as rock, reggae,
+              and punk, and Prodan was a talented and charismatic lyricist
+              who helped define the band's sound.
+            </p>
+            <p>However, Prodan also struggled with addiction and mental
+              health issues, and passed away in <mark>1987</mark> at the age
+              of 34 due to respiratory failure. Despite his short career,
+              Prodan left a lasting mark on <mark>Argentina music</mark>
+              and is remembered as one of the most influential artists
+              of his generation.
+            </p>
+          </div>
+        </div>
+
+        <img
+          class="history__decorate-vector"
+          src="../assets/vectors/light-sparkles.svg"
+          alt="light sparkles"
+        />
+        <img
+          src="../assets/pictures/background-grunge-sections.jpg"
+          class="background-image-section background-grunge-sections"
+          alt="background grunge history section"
+        />
+        <div class="stripes"></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h4 class="contact__title">Contact Form</h4>
+        <form class="contact__form" action="index.html" method="post">
+          <input placeholder="Name" aria-label="name" type="text" name="name"/>
+          <input placeholder="Email address" aria-label="email address" type="email" name="Email address"/>
+          <input placeholder="Subject" aria-label="subject" type="text" name="Subject"/>
+          <textarea placeholder="Message" aria-label="message" name="Message" rows="8" cols="80"></textarea>
+
+          <input aria-label="submit contact form" type="submit" name="Subject" value="SUBMIT"/>
+        </form>
+
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="">
+
+      <div>
         <a target="_blank" href="https://open.spotify.com/user/9t7qhi5hqhx0882iwbccqlbvy?si=bf397a672bc9476a">
           <img src="../assets/icons/spotify-icon.svg" alt="spotify link"/>
         </a>
@@ -153,9 +162,7 @@
           <img src="../assets/icons/instagram-icon.svg" alt="linkedin link"/>
         </a>
       </div>
-      <span>Esequiel Delgado @2023</span>
+      <span>Esequiel Delgado @2024</span>
     </footer>
-
-
   </body>
 </html>

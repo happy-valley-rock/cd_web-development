@@ -41,20 +41,28 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 }
 
 .layout {
-  display       : flex;
-  flex-direction: row-reverse;
+  display: grid;
+  grid-template-columns: 3fr 300px;
+  grid-template-rows: auto 1fr auto;
+
+  @include media("<=tablet") {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: auto 1fr auto;
+  }
 }
 
 .content {
-  width         : 100%;
-  display       : flex;
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  overflow      : hidden;
+  overflow: hidden;
+  min-height: 100vh;
+  order: 1;
+}
 
-  &__layout {
-    width: 100%;
-    min-height: 100vh;
-  }
+.header {
+  order: 2;
 }
 
 .stripes {

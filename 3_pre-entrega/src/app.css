@@ -71,17 +71,25 @@ h1, h2, h3, h4, h5, h6, a, p, span {
   font-family: "Space Grotesk", sans-serif; }
 
 .layout {
-  display: flex;
-  flex-direction: row-reverse; }
+  display: grid;
+  grid-template-columns: 3fr 300px;
+  grid-template-rows: auto 1fr auto; }
+  @media (max-width: 900px) {
+    .layout {
+      display: grid;
+      grid-template-columns: 3fr;
+      grid-template-rows: auto 1fr auto; } }
 
 .content {
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden; }
-  .content__layout {
-    width: 100%;
-    min-height: 100vh; }
+  overflow: hidden;
+  min-height: 100vh;
+  order: 1; }
+
+.header {
+  order: 2; }
 
 .stripes {
   z-index: 1;
@@ -295,7 +303,9 @@ h1, h2, h3, h4, h5, h6, a, p, span {
   background-color: #121212;
   width: 100%;
   text-align: center;
-  padding: 16px 0px; }
+  padding: 16px 0px;
+  grid-column: 1 / span 2;
+  order: 3; }
   .footer a {
     color: rgba(248, 248, 255, 0.3);
     text-decoration: underline; }
@@ -910,3 +920,47 @@ h1, h2, h3, h4, h5, h6, a, p, span {
     width: 100%;
     object-fit: cover;
     padding-top: 16px; }
+
+/* Styles contact form section*/
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 32px 16px;
+  z-index: 1; }
+  .contact__title {
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: auto;
+    letter-spacing: 0px;
+    color: white;
+    font-weight: 600; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%; }
+    .contact__form input[type="text"], .contact__form input[type="email"], .contact__form textarea {
+      font-family: "Space Grotesk", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: auto;
+      letter-spacing: 0.5px;
+      color: black;
+      font-weight: 400;
+      padding: 8px 4px;
+      border: none;
+      margin: 8px 0px; }
+    .contact__form input[type="submit"] {
+      font-family: "Space Grotesk", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: auto;
+      letter-spacing: 0.5px;
+      padding: 8px 4px;
+      margin: 8px 0px; }

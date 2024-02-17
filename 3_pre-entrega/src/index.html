@@ -15,7 +15,6 @@
       crossorigin="anonymous"
     >
     <link rel="stylesheet" href="app.css">
-
     <!-- Primary Meta Tags -->
     <title>Luca Not Dead</title>
     <meta name="title" content="Luca Not Dead" />
@@ -31,7 +30,7 @@
       property="og:description"
       content="Website dedicated to the rock leader from Sumo band in the 80s Argentina music."
     />
-    <meta property="og:image" content="./assets/pictures/meta-image.webp" />
+    <meta property="og:image" content="assets/pictures/meta-image.webp" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://luca-not-dead.imedl.com/" />
@@ -40,26 +39,26 @@
       property="twitter:description"
       content="Website dedicated to the rock leader from Sumo band in the 80s Argentina music."
     />
-    <meta property="twitter:image" content="./assets/pictures/meta-image.webp" />
+    <meta property="twitter:image" content="assets/pictures/meta-image.webp" />
     <!-- Keywords -->
     <meta name="keywords" content="SUMO, LUCA PRODAN, MUSICA ARGENTINA, ROCK ARGENTINO, PUNK ARGENTINO, REGGAE ARGENTINO"/>
   </head>
 
-  <body>
-    <main class="layout">
+  <body class="layout">
 
-      <input aria-label="menu button mobile" class="menu-button" type="checkbox" name="menu" id="checked">
+    <header class="header">
 
       <div class="topbar">
+        <input aria-label="menu button mobile" class="menu-button" type="checkbox" name="menu" id="checked">
         <div class="topbar__menu">
           <img
             class="topbar__menu--close"
-            src="./assets/icons/menu.svg"
+            src="assets/icons/menu.svg"
             alt="menu"
           />
           <img
             class="topbar__menu--open"
-            src="./assets/icons/menu-open.svg"
+            src="assets/icons/menu-open.svg"
             alt="menu open"
           />
         </div>
@@ -68,8 +67,7 @@
 
         <div class="topbar__vector">
           <img
-            class="navbar__vector"
-            src="./assets/vectors/skull-candel.svg"
+            src="assets/vectors/skull-candel.svg"
             alt="skull candel"
           />
         </div>
@@ -82,7 +80,7 @@
               aria-label="navigate to landing"
               class="navbar__buttons-link--active"
               data-section="landing"
-              href="./pages/landing.html"
+              href="index.html"
             >
               landing
             </a>
@@ -92,7 +90,7 @@
               aria-label="navigate to history"
               class="navbar__buttons-link"
               data-section="history"
-              href="./pages/history.html"
+              href="pages/history.html"
             >
               history
             </a>
@@ -102,7 +100,7 @@
               aria-label="navigate to band"
               class="navbar__buttons-link"
               data-section="band"
-              href="./pages/band.html"
+              href="pages/band.html"
             >
               sumo
             </a>
@@ -112,7 +110,7 @@
               aria-label="navigate to discography"
               class="navbar__buttons-link"
               data-section="discography"
-              href="./pages/discography.html"
+              href="pages/discography.html"
             >
               discography
             </a>
@@ -122,9 +120,19 @@
               aria-label="navigate to gallery"
               class="navbar__buttons-link"
               data-section="gallery"
-              href="./pages/gallery.html"
+              href="pages/gallery.html"
             >
               gallery
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="navigate to contact"
+              class="navbar__buttons-link"
+              data-section="contact"
+              href="#contact"
+            >
+              contact
             </a>
           </li>
         </ul>
@@ -134,70 +142,81 @@
             aria-label="spotify link button"
             href="https://open.spotify.com/user/9t7qhi5hqhx0882iwbccqlbvy?si=bf397a672bc9476a"
           >
-            <img src="./assets/icons/spotify-icon.svg" alt="spotify link"/>
+            <img src="assets/icons/spotify-icon.svg" alt="spotify link"/>
           </a>
           <a
             target="_blank"
             aria-label="linkedin link button"
             href="https://www.linkedin.com/in/esequieldelgado-developer/"
           >
-            <img src="./assets/icons/linkedin-icon.svg" alt="linkedin link"/>
+            <img src="assets/icons/linkedin-icon.svg" alt="linkedin link"/>
           </a>
           <a
             target="_blank"
             aria-label="github link button"
             href="https://github.com/happy-valley-rock"
           >
-            <img src="./assets/icons/github-icon.svg" alt="github link"/>
+            <img src="assets/icons/github-icon.svg" alt="github link"/>
           </a>
         </div>
 
         <img
           class="navbar__vector navbar__vector"
-          src="./assets/vectors/skull-candel.svg"
+          src="assets/vectors/skull-candel.svg"
           alt="skull candel"
         />
       </nav>
 
-      <div class="content">
-        <div class="content__layout">
+    </header>
 
-          <section id="landing" class="landing">
-            <div class="landing__top">
-              <span class="landing__top-header-label">.luca-not-dead</span>
-            </div>
+    <main class="content">
 
-            <article class="landing__middle">
-              <h1 class="landing__middle-title">LUCA - PRODAN</h1>
-              <h2 class="landing__middle-subtitle">
-                WEBSITE DEDICATED TO THE ROCK
-                LEADER FROM SUMO IN THE 80S ARGENTINA MUSIC
-              </h2>
-              <img
-                class="landing__middle-logo"
-                src="./assets/vectors/logo-sumo.svg"
-                alt="sumo logo"
-              />
-            </article>
-
-            <article class="landing__bottom">
-              <img
-                src="./assets/pictures/landing-band-playing.webp"
-                class="landing__bottom-image landing-band-playing"
-                alt="landing band playing"
-              />
-            </article>
-
-            <img
-              src="./assets/pictures/background-grunge-landing.webp"
-              class="background-image-section background-grunge-landing"
-              alt="background grunge landing"
-            />
-            <div class="stripes"></div>
-          </section>
-
+      <section id="landing" class="landing">
+        <div class="landing__top">
+          <span class="landing__top-header-label">.luca-not-dead</span>
         </div>
-      </div>
+
+        <article class="landing__middle">
+          <h1 class="landing__middle-title">LUCA - PRODAN</h1>
+          <h2 class="landing__middle-subtitle">
+            WEBSITE DEDICATED TO THE ROCK
+            LEADER FROM SUMO IN THE 80S ARGENTINA MUSIC
+          </h2>
+          <img
+            class="landing__middle-logo"
+            src="assets/vectors/logo-sumo.svg"
+            alt="sumo logo"
+          />
+        </article>
+
+        <article class="landing__bottom">
+          <img
+            src="assets/pictures/landing-band-playing.webp"
+            class="landing__bottom-image landing-band-playing"
+            alt="landing band playing"
+          />
+        </article>
+
+        <img
+          src="assets/pictures/background-grunge-landing.webp"
+          class="background-image-section background-grunge-landing"
+          alt="background grunge landing"
+        />
+        <div class="stripes"></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h4 class="contact__title">Contact Form</h4>
+        <form class="contact__form" action="index.html" method="post">
+          <input placeholder="Name" aria-label="name" type="text" name="name"/>
+          <input placeholder="Email address" aria-label="email address" type="email" name="Email address"/>
+          <input placeholder="Subject" aria-label="subject" type="text" name="Subject"/>
+          <textarea placeholder="Message" aria-label="message" name="Message" rows="8" cols="80"></textarea>
+
+          <input aria-label="submit contact form" type="submit" name="Subject" value="SUBMIT"/>
+        </form>
+
+      </section>
 
     </main>
 
