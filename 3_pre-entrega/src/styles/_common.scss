@@ -35,9 +35,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-h1, h2, h3, h4, h5, h6, a, p, span {
+h1, h2, h3, h4, h5, h6, a, p, span, input {
   color      : palette('light');
   font-family: $firstFamilyFont;
+}
+
+input, textarea {
+  outline: 0px;
+  border : 0px;
 }
 
 .layout {

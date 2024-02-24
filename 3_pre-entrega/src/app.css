@@ -66,9 +66,13 @@ body::-webkit-scrollbar-thumb {
   body::-webkit-scrollbar-thumb:hover {
     background-color: rgba(238, 0, 0, 0.6); }
 
-h1, h2, h3, h4, h5, h6, a, p, span {
+h1, h2, h3, h4, h5, h6, a, p, span, input {
   color: #F8F8FF;
   font-family: "Space Grotesk", sans-serif; }
+
+input, textarea {
+  outline: 0px;
+  border: 0px; }
 
 .layout {
   display: grid;
@@ -923,44 +927,59 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 
 /* Styles contact form section*/
 .contact {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
-  padding: 32px 16px;
+  gap: 16px;
+  padding: 64px 16px;
   z-index: 1; }
   .contact__title {
-    font-family: "Space Grotesk", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: auto;
     letter-spacing: 0px;
-    color: white;
+    color: #F8F8FF;
     font-weight: 600; }
   .contact__form {
     display: flex;
     flex-direction: column;
-    max-width: 100%; }
+    max-width: 100%;
+    z-index: 2; }
     .contact__form input[type="text"], .contact__form input[type="email"], .contact__form textarea {
-      font-family: "Space Grotesk", sans-serif;
       font-style: normal;
       font-weight: 400;
-      font-size: 15px;
+      font-size: 16px;
       line-height: auto;
       letter-spacing: 0.5px;
       color: black;
       font-weight: 400;
       padding: 8px 4px;
       border: none;
-      margin: 8px 0px; }
+      margin: 8px 0px;
+      transition: .2s;
+      border-bottom: solid 8px #0E0E0E;
+      background-color: #F8F8FF; }
+      .contact__form input[type="text"]:focus, .contact__form input[type="email"]:focus, .contact__form textarea:focus {
+        border-color: #EE0000;
+        transition: .2s; }
     .contact__form input[type="submit"] {
-      font-family: "Space Grotesk", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
       line-height: auto;
-      letter-spacing: 0.5px;
+      letter-spacing: 2px;
       padding: 8px 4px;
-      margin: 8px 0px; }
+      margin: 8px 0px;
+      outline: inherit;
+      border: 0px;
+      background-color: #EE0000;
+      transition: .3s; }
+      .contact__form input[type="submit"]:hover {
+        background-color: #F8F8FF;
+        color: #EE0000; }
+      .contact__form input[type="submit"]:active {
+        background-color: #EE0000;
+        color: #F8F8FF; }
