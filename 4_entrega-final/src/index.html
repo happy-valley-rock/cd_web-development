@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="thmarke-color" content="#121212" />
+
+    <link rel="icon" href="public/favicon.ico" />
+    <link rel="luca-not-dead-icon" href="public/logo192.png" />
+    <link rel="manifest" href="public/manifest.json" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="app.css">
+    <!-- Primary Meta Tags -->
+    <title>Luca Not Dead</title>
+    <meta name="title" content="Luca Not Dead" />
+    <meta
+      name="description"
+      content="Website dedicated to the rock leader from Sumo band in the 80s Argentina music."
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://luca-not-dead.imedl.com/" />
+    <meta property="og:title" content="Luca Not Dead" />
+    <meta
+      property="og:description"
+      content="Website dedicated to the rock leader from Sumo band in the 80s Argentina music."
+    />
+    <meta property="og:image" content="assets/pictures/meta-image.webp" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://luca-not-dead.imedl.com/" />
+    <meta property="twitter:title" content="Luca Not Dead" />
+    <meta
+      property="twitter:description"
+      content="Website dedicated to the rock leader from Sumo band in the 80s Argentina music."
+    />
+    <meta property="twitter:image" content="assets/pictures/meta-image.webp" />
+    <!-- Keywords -->
+    <meta name="keywords" content="SUMO, LUCA PRODAN, MUSICA ARGENTINA, ROCK ARGENTINO, PUNK ARGENTINO, REGGAE ARGENTINO"/>
+  </head>
+
+  <body class="layout">
+
+    <header class="header">
+
+      <div class="topbar">
+        <input aria-label="menu button mobile" class="menu-button" type="checkbox" name="menu" id="checked">
+        <div class="topbar__menu">
+          <img
+            class="topbar__menu--close"
+            src="assets/icons/menu.svg"
+            alt="menu"
+          />
+          <img
+            class="topbar__menu--open"
+            src="assets/icons/menu-open.svg"
+            alt="menu open"
+          />
+        </div>
+
+        <span>.luca-not-dead</span>
+
+        <div class="topbar__vector">
+          <img
+            class="navbar__vector--hidden"
+            src="assets/vectors/skull-candel.svg"
+            alt="skull candel"
+          />
+          <img
+            class="navbar__vector--hidden"
+            src="assets/vectors/old-clock.svg"
+            alt="old clock"
+          />
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <ul class="navbar__buttons">
+          <li>
+            <a
+              aria-label="navigate to landing"
+              class="navbar__buttons-link"
+              data-section="landing"
+              href="#landing"
+            >
+              landing
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="navigate to history"
+              class="navbar__buttons-link"
+              data-section="history"
+              href="#history"
+            >
+              history
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="navigate to band"
+              class="navbar__buttons-link"
+              data-section="band"
+              href="#band"
+            >
+              sumo
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="navigate to discography"
+              class="navbar__buttons-link"
+              data-section="discography"
+              href="#discography"
+            >
+              discography
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="navigate to gallery"
+              class="navbar__buttons-link"
+              data-section="gallery"
+              href="#gallery"
+            >
+              gallery
+            </a>
+          </li>
+          <li>
+            <a
+              aria-label="navigate to contact"
+              class="navbar__buttons-link"
+              data-section="contact"
+              href="#contact"
+            >
+              contact
+            </a>
+          </li>
+        </ul>
+        <div class="navbar__bottom">
+          <a
+            target="_blank"
+            aria-label="spotify link button"
+            href="https://open.spotify.com/user/9t7qhi5hqhx0882iwbccqlbvy?si=bf397a672bc9476a"
+          >
+            <img src="assets/icons/spotify-icon.svg" alt="spotify link"/>
+          </a>
+          <a
+            target="_blank"
+            aria-label="linkedin link button"
+            href="https://www.linkedin.com/in/esequieldelgado-developer/"
+          >
+            <img src="assets/icons/linkedin-icon.svg" alt="linkedin link"/>
+          </a>
+          <a
+            target="_blank"
+            aria-label="github link button"
+            href="https://github.com/happy-valley-rock"
+          >
+            <img src="assets/icons/github-icon.svg" alt="github link"/>
+          </a>
+        </div>
+
+        <img
+          class="navbar__vector navbar__vector--hidden"
+          src="assets/vectors/skull-candel.svg"
+          alt="skull candel"
+        />
+        <img
+          class="navbar__vector navbar__vector--hidden"
+          src="assets/vectors/old-clock.svg"
+          alt="old clock"
+        />
+      </nav>
+
+    </header>
+
+    <main class="content">
+
+      <section id="landing" class="landing">
+        <div class="landing__top">
+          <span class="landing__top-header-label">.luca-not-dead</span>
+        </div>
+
+        <article class="landing__middle">
+          <h1 class="landing__middle-title">LUCA - PRODAN</h1>
+          <h2 class="landing__middle-subtitle">
+            WEBSITE DEDICATED TO THE ROCK
+            LEADER FROM SUMO IN THE 80S ARGENTINA MUSIC
+          </h2>
+          <img
+            class="landing__middle-logo"
+            src="assets/vectors/logo-sumo.svg"
+            alt="sumo logo"
+          />
+        </article>
+
+        <article class="landing__bottom">
+          <img
+            src="assets/pictures/landing-band-playing.webp"
+            class="landing__bottom-image landing-band-playing"
+            alt="landing band playing"
+          />
+        </article>
+
+        <img
+          src="assets/pictures/background-grunge-landing.webp"
+          class="background-image-section background-grunge-landing"
+          alt="background grunge landing"
+        />
+        <div class="stripes"></div>
+      </section>
+
+      <section id="history" class="history section">
+        <div class="history__top">
+          <img
+            src="assets/pictures/history-singing-guitar.webp"
+            class="history__top-image history-singing-guitar"
+            alt="history singing guitar"
+          />
+        </div>
+
+        <div class="history__bottom element--hidden">
+          <h3 class="card">history</h3>
+          <article class="card">
+            <p><mark>Luca Prodan</mark> 1970s Argentina 1987 Argentine music
+             was a musician and poet born in Italy, but primarily known for
+             his work in the Argentine music scene. He was born in Rome in
+             1953 and moved to England at the age of 11, where he attended
+             high school and later Cambridge University, where he studied
+             English literature.
+           </p>
+            <p>In the <mark>1970s</mark>, he moved to <mark>Argentina</mark>
+              and became the leader of the rock band Sumo, one of
+              the most influential bands of the Argentine music scene of the
+              time. Sumo fused several musical genres, such as rock, reggae,
+              and punk, and Prodan was a talented and charismatic lyricist
+              who helped define the band's sound.
+            </p>
+            <p>However, Prodan also struggled with addiction and mental
+              health issues, and passed away in <mark>1987</mark> at the age
+              of 34 due to respiratory failure. Despite his short career,
+              Prodan left a lasting mark on <mark>Argentina music</mark>
+              and is remembered as one of the most influential artists
+              of his generation.
+            </p>
+          </article>
+        </div>
+
+        <img
+          class="history__decorate-vector element--hidden"
+          src="assets/vectors/light-sparkles.svg"
+          alt="light sparkles"
+        />
+        <img
+          src="assets/pictures/background-grunge-sections.webp"
+          class="background-image-section background-grunge-sections"
+          alt="background grunge history section"
+        />
+        <div class="stripes"></div>
+      </section>
+
+      <section id="band" class="band section">
+        <div class="band__top">
+          <h3 class="card">sumo</h3>
+
+          <article class="band__top-content element--hidden">
+            <article class="band__top-content--text card">
+              <p>
+                <mark>Sumo</mark> was an Argentine rock band formed in
+                <mark>1981</mark> by singer and songwriter Luca Prodan. The
+                band was made up of musicians from different backgrounds,
+                including a member from New Zealand, one from the United
+                States, and several from Argentina. Sumo blended several
+                genres, such as rock, reggae, and funk, and often sang in
+                English.
+              </p>
+              <article class="band__top-content--text__thumbnail">
+                <div class="band__top-content--thumbnail">
+                  <img
+                    src="assets/pictures/luca-jamaica-no-problem.webp"
+                    class="band__top-image--inside luca-jamaica-no-problem"
+                    alt="luca jamaica no problem"
+                  />
+                </div>
+                <p>
+                  The band achieved fame in <mark>Argentina</mark> and other
+                  Latin American countries, and their music influenced many
+                  subsequent artists. However, the band's career was
+                  short-lived due to Prodan's untimely death in 1987.
+                </p>
+              </article>
+              <img
+                class="band__decorate-text-vector"
+                src="assets/vectors/voodoo-puppet.svg"
+                alt="voodoo puppet"
+              />
+            </article>
+
+            <article class="band__top-content--thumbnail">
+              <img
+                src="assets/pictures/luca-jamaica-no-problem.webp"
+                class="band__top-image luca-jamaica-no-problem"
+                alt="luca jamaica no problem"
+              />
+            </article>
+          </article>
+        </div>
+
+        <article class="band__bottom element--hidden">
+          <div class="band__bottom-image-container">
+            <img
+              src="assets/pictures/sumo-members.webp"
+              class="band__bottom-image sumo-members"
+              alt="sumo members"
+            />
+          </div>
+          <img
+            class="band__decorate-vector"
+            src="assets/vectors/cigar-smoke.svg"
+            alt="cigar smoke"
+          />
+          <span class="band__bottom-description label">members definitive grouping</span>
+        </article>
+
+        <article class="band__bottom-members card element--hidden">
+          <h6>members definitive grouping</h6>
+          <ul>
+            <li>Alberto Troglio - Drummer</li>
+            <li>Luca Prodan - Voice</li>
+            <li>German Daffuncio - Guitar</li>
+            <li>Ricardo Mollo - Guitar</li>
+            <li>Diego Arnedo - Bass</li>
+            <li>Roberto Pettinato - Sax</li>
+          </ul>
+        </article>
+
+        <img
+          src="assets/pictures/background-grunge-sections.webp"
+          class="background-image-section--reversed background-grunge-sections"
+          alt="background grunge band section"
+        />
+        <div class="stripes"></div>
+      </section>
+
+      <section id="discography" class="discography section">
+        <div class="discography__top element--hidden">
+          <h3 class="card">discography</h3>
+        </div>
+
+        <div class="discography__bottom element--hidden">
+
+          <article class="card-album">
+            <a
+              aria-label="album corpinio link to en la madrugada"
+              target="_blank"
+              href="https://open.spotify.com/album/0wooZ6DUEtSf0bJY7SXYen?si=Qb9C1_yDSHi6eFQTbnFaJQ"
+            ></a>
+            <div class="card-album__image">
+              <img
+                src="assets/pictures/album-corpinio-en-la-madrugada.webp"
+                class="album-corpinio-en-la-madrugada"
+                alt="album corpinio en la madrugada"
+              />
+            </div>
+            <div class="label card-album__label card-album__label--variant1">
+              <span>Corpiños en la madrugada</span>
+              <p>1983</p>
+            </div>
+          </article>
+
+          <article class="card-album">
+            <a
+              aria-label="album divididos link to por la felicidad"
+              target="_blank"
+              href="https://open.spotify.com/album/0iMPnRq7PL82Zrah0gTQBR?si=Zk_kjuAQQsG1b9SotuaJ1Q"
+            ></a>
+            <div class="card-album__image">
+              <img
+                src="assets/pictures/album-divididos-por-la-felicidad.webp"
+                class="album-divididos-por-la-felicidad"
+                alt="album divididos por la felicidad"
+              />
+            </div>
+            <div class="label card-album__label card-album__label--variant2">
+              <span>Divididos por la felicidad</span>
+              <p>1985</p>
+            </div>
+          </article>
+
+          <article class="card-album">
+            <a
+              aria-label="album link to llegando los monos"
+              target="_blank"
+              href="https://open.spotify.com/album/2kn0EF90FuahMHtPpwVsX4?si=X4iFM-2vR7C8CrzpTYwoxw"
+            ></a>
+            <div class="card-album__image">
+              <img
+                src="assets/pictures/album-llegando-los-monos.webp"
+                class="album-llegando-los-monos"
+                alt="album llegando los monos"
+              />
+            </div>
+            <div class="label card-album__label card-album__label--variant3">
+              <span>Llegando los monos</span>
+              <p>1986</p>
+            </div>
+          </article>
+
+          <article class="card-album">
+            <a
+              aria-label="link to album after chabon"
+              target="_blank"
+              href="https://open.spotify.com/album/721cIV4PIWZSK5nZaYPvFy?si=MRT2_LKaQxKH4pS6MsaHxg"
+            ></a>
+            <div class="card-album__image">
+              <img
+                src="assets/pictures/album-after-chabon.webp"
+                class="album-after-chabon"
+                alt="album after chabon"
+              />
+            </div>
+            <div class="label card-album__label card-album__label--variant2">
+              <span>After chabon</span>
+              <p>1987</p>
+            </div>
+          </article>
+
+          <article class="card-album">
+            <a
+              aria-label="link to album fiebre"
+              target="_blank"
+              href="https://open.spotify.com/album/5LpuDtFRVdmO8g1E5OczMU?si=IrQ95hvzQmum_GXW9y6bHA"
+            ></a>
+            <div class="card-album__image">
+              <img
+                src="assets/pictures/album-fiebre.webp"
+                class="album-fiebre"
+                alt="album fiebre"
+              />
+            </div>
+            <div class="label card-album__label card-album__label--variant3">
+              <span>Fiebre</span>
+              <p>1989</p>
+            </div>
+          </article>
+
+          <article class="card-album">
+            <a
+              aria-label="link to album fate love"
+              target="_blank"
+              href="https://open.spotify.com/album/0q2h0JptxibMUdpdMT6imM?si=lw1Wy15vQ1CkylvWP-HNJA"
+            ></a>
+            <div class="card-album__image">
+              <img
+                src="assets/pictures/album-time-fate-love.webp"
+                class="album-time-fate-love"
+                alt="album-time-fate-love"
+              />
+            </div>
+            <div class="label card-album__label card-album__label--variant3">
+              <span>Time fate love</span>
+              <p>1996 - Compilation</p>
+            </div>
+          </article>
+
+          <article class="card-album">
+            <a
+              aria-label="link to album perdedores hermosos"
+              target="_blank"
+              href="https://open.spotify.com/album/0INUzgNxLoz31N8aFpJipq?si=DegB-y2DT32n9HFJ6MW9IA"
+            ></a>
+            <div class="card-album__image">
+              <img
+                src="assets/pictures/album-perdedores-hermosos.webp"
+                class="album-perdedores-hermosos"
+                alt="album perdedores hermosos"
+              />
+            </div>
+            <div class="label card-album__label card-album__label--variant1">
+              <span>Perdedores hermosos</span>
+              <p>1997 - Compilation</p>
+            </div>
+          </article>
+
+        </div>
+
+        <img
+          src="assets/pictures/background-grunge-sections.webp"
+          class="background-image-section background-grunge-sections"
+          alt="background grunge discography section"
+        />
+        <div class="stripes"></div>
+      </section>
+
+      <section id="gallery" class="gallery section">
+        <div class="gallery__top element--hidden">
+          <h3 class="card">gallery</h3>
+        </div>
+
+        <div class="gallery__content row element--hidden">
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/sumo-members.webp"
+                  alt="All sumo members selfie"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/luca-on-stage.webp"
+                  alt="Luca prodan on stage"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/smoking-cigarette.webp"
+                  alt="Luca smoking a cigarette"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/sitting-on-park.webp"
+                  alt="Luca sitting on a park chair"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/riding-horse.webp"
+                  alt="Luca riding a horse"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/playing-trumpet-with-members.webp"
+                  alt="Luca paying trumpet with sumo members"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/members-on-train-track.webp"
+                  alt="Sumo members taking a photo on a train track"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/guitarist-and-singer.webp"
+                  alt="Guitarist Ricado and Luca singing on stage"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/lighting-a-cigarette.webp"
+                  alt="Luca lighting a cigarette"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/singing-with-guitar.webp"
+                  alt="Luca singing while playing guitar"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/wall-painting.webp"
+                  alt="Wall painting luca not dead"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="thumbnail">
+              <div class="img-container">
+                <img
+                  class="gallery__image"
+                  src="assets/images/singing-sitting.webp"
+                  alt="Luca singing sitting on stage"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="assets/pictures/background-grunge-footer.webp"
+          class="background-image-section gallery__background background-grunge-footer"
+          alt="background grunge gallery section"
+        />
+        <div class="stripes"></div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h4 class="contact__title">Let's talk!</h4>
+        <form class="contact__form" action="index.html" method="post">
+          <input placeholder="Name" aria-label="name" type="text" name="name"/>
+          <input placeholder="Email address" aria-label="email address" type="email" name="Email address"/>
+          <input placeholder="Subject" aria-label="subject" type="text" name="Subject"/>
+          <textarea placeholder="Message" aria-label="message" name="Message" rows="8" cols="80"></textarea>
+          <input aria-label="submit Let's talk!" type="submit" name="Subject" value="SUBMIT"/>
+        </form>
+
+        <div class="stripes"></div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <a
+        id="footerLabel"
+        aria-label="github profile link"
+        target="_blank"
+        href="https://github.com/happy-valley-rock"
+      ></a>
+    </footer>
+  </body>
+
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript">document.getElementById("footerLabel").textContent = "@happy-valley-rock - " + new Date().getFullYear();</script>
+</html>

@@ -1,0 +1,39 @@
+/* Section gallery styles*/
+
+.gallery {
+  padding-top    : 64px;
+  padding-bottom : 128px;
+  position       : relative;
+  min-height     : 100vh;
+  overflow       : hidden;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  gap            : 32px;
+
+  &__top {
+    @include spacing();
+    display: flex;
+    z-index: 3;
+  }
+
+  &__content {
+    @include spacing();
+    z-index: 2;
+    flex: 1;
+    height: 100%;
+  }
+
+  &__background {
+    bottom: 0px;
+    top   : inherit;
+  }
+
+  &__image {
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    padding-top: 16px;
+  }
+}
